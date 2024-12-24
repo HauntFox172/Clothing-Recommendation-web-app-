@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&family=Varela&display=swap');
+
+:root {
+    --white-color: #f5f5f5;
+    --gray-color: #ccc;
+    --black-color: #0f0f0f;
+    --primary-color: #233D4D;
+    --secondary-color: #3B93C8;
+    --orange-color: #FE7F2D;
+    --yellow-color: #FCCA46;
+    --green-color: #A1C181;
+    --blue-color: #619B8A;
+
+    --header-toggle-hover-color: #ffd381;
+    --header-toggle-active-color: #ffe5b4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Varela', serif;
+    background-color: var(--gray-color);
+    color: var(--black-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+a {
+    color: var(--blue-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    filter: brightness(0.9);
+    /* background: linear-gradient(to right, var(--yellow-color), var(--orange-color)); */
+    background-color: var(--orange-color);
+    padding: 20px;
+    border-radius: 50px;
+    color: var(--black-color);
+    font-size: 20px;
+    transition: transform 0.5s ease, background 0.3s ease;
+}
+
+button:hover {
+    /* background: linear-gradient(to right, var(--orange-color), var(--yellow-color)); */
+    background-color: var(--yellow-color);
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+button:active {
+    color: var(--white-color);
+    filter: brightness(0.8);
+    transform: scale(0.9);
+}
+
+input {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: var(--white-color);
+    font-size: 16px;
+    border: 5px solid white;
+    outline: none;
+    transition: border-color 0.5s ease;
+} 
+input:focus {
+    border-color: var(--primary-color);
+} 
+
+img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}

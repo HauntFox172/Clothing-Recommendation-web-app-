@@ -1,0 +1,181 @@
+.header {
+    /* background: linear-gradient(to top, var(--primary-color), var(--secondary-color)); */
+    background-color: var(--primary-color);
+    /* border-bottom: 5px solid #1e303b; */
+    color: var(--white-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    height: 70px;
+    transition: height 0.7s ease, padding 0.7s ease;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.header.expanded {
+    height: 250px;
+}
+
+.header-toggle {
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    transition: color 0.5s ease, text-shadow 0.5s ease, filter 0.1s ease, transform 0.5s ease;
+}
+
+.header-toggle:hover {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+.header-toggle:active {
+    color: var(--white-color);
+    text-shadow: none;
+    filter: brightness(0.8);
+    transform: scale(0.9);
+}
+
+.header-toggle span {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.header-content {
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.header-content.hide {
+    opacity: 0;
+}
+
+.header-content.show {
+    opacity: 1;
+}
+
+.input-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.weather-info, .description{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.weather-info:hover, .description:hover {
+    transform: scale(1.05);
+}
+
+.weather-info {
+    background-color: var(--green-color);
+}
+
+.description {
+    background-color: var(--blue-color);
+}
+
+.image-list-container {
+    display: flex;
+    align-items: center;
+}
+
+.clothing-category {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.image-thumbnails {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 250px; /* Ширина контейнера */
+    height: 200px; /* Высота контейнера */
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Закругленные углы */
+    box-sizing: border-box; /* Учитывать размеры в ширине и высоте */
+}
+
+.image-preview {
+    flex-shrink: 0; /* Не сжимать изображения */
+    width: 100%; /* Каждое изображение занимает всю ширину контейнера */
+    height: 100%; /* Контейнер имеет фиксированную высоту */
+    overflow: hidden; /* Скрывает лишнюю часть изображения */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрирование изображения */
+}
+
+.image-item {
+    max-width: 100%;
+    max-height: 100%; /* Ограничивает максимальную высоту */
+    object-fit: contain; /* Изображение помещается в контейнер */
+    display: block; /* Убирает отступы под изображением */
+    transition: transform 0.3s; /* Плавный переход при изменении масштаба */
+}
+
+.image-item:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+    z-index: 1; /* Поднятие изображения на передний план */
+}
+
+.error-and-loading-text {
+    color: var(--black-color);
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.background-div {
+    overflow: auto;
+    width: calc(100% - 40px); /* Учитываем отступы */
+    background-color: var(--white-color);
+    margin: 20px; /* Отступы сверху и снизу, по 20px слева и справа */
+    padding: 50px 20px; 
+    box-sizing: border-box; /* Учитываем поля и отступы в ширину элемента */
+    border-radius: 10px;
+}
