@@ -21,5 +21,26 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# Ignore assembly files
+*.dll
+*.pdb
+
+# Ignore cache
+obj/
+bin/
+*.cache
+*.tmp
+
+# Ignore ASP cache files
+*.suo
+*.user
+*.userprefs
+*.vs/
+
 # Windows shortcuts
 *.lnk
+WeatherClothingApp/obj/Debug/net8.0/apphost.exe
+WeatherClothingApp/obj/Debug/net8.0/WeatherClothingApp.AssemblyInfo.cs
+WeatherClothingApp/obj/Debug/net8.0/WeatherClothingApp.AssemblyInfoInputs.cache
+WeatherClothingApp/obj/Debug/net8.0/WeatherClothingApp.assets.cache
+WeatherClothingApp/obj/Debug/net8.0/WeatherClothingApp.GeneratedMSBuildEditorConfig.editorconfig
