@@ -1,3 +1,4 @@
 # Clothing-Recommendation-web-app-
 My coursework
-Domain name: clothing-recommendation-web-app.vercel.app
+
+Domain name: https://clothing-recommendation-web-app.vercel.app/
