@@ -1,4 +1,3 @@
-# Clothing-Recommendation-web-app-
-My coursework
+# Clothing-Recommendation-web-app
 
 Domain name: https://clothing-recommendation-web-app.vercel.app/
